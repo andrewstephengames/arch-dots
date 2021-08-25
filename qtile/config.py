@@ -120,7 +120,7 @@ group_names = [("", {'layout': 'columns'}),
                ("", {'layout': 'columns'}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["deadbeef"])]}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["fsearch"])]}),
-               ("", {'layout': 'columns', 'matches':[Match(wm_class=["multimc", "Minecraft Linux Launcher UI"])]}),
+               ("", {'layout': 'max', 'matches':[Match(wm_class=["multimc", "Minecraft Linux Launcher UI"])]}),
                ("", {'layout': 'columns'}),
                ("", {'layout': 'columns'}),
                ("", {'layout': 'columns'})]
