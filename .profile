@@ -1,1 +1,2 @@
 export QT_QPA_PLATFORMTHEME=qt5ct
+export MCPE=mcpelauncher-thesonicmaster-20210727-x86_64.AppImage
