@@ -11,7 +11,6 @@ nitrogen --restore &
 flameshot &
 pcmanfm -d &
 kdeconnect-indicator &
-transmission-daemon &
 xset -dpms &
 xset s off &
 xset -b &

@@ -109,8 +109,10 @@ keys = [
         desc="Launch host filesystem with a keybinding"),
     Key([mod], "w", lazy.spawn("firefox"),
         desc="Launch Firefox"),
-    Key([mod], "e", lazy.spawn("pcmanfm"),
+    Key([mod], "f", lazy.spawn("pcmanfm"),
         desc="Launch PCManFM"),
+    Key([mod], "m", lazy.spawn("sh scripts/mcpe"),
+        desc="Launch MCPE"),
 ]
 
 group_names = [("", {'layout': 'columns'}),
