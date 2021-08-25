@@ -2,6 +2,7 @@
 picom --experimental-backends &
 #appimagelauncherd &
 sh $HOME/scripts/dotsync
+sh $HOME/scripts/pkgmaintain.sh
 lxsession &
 dunst &
 redshift &
