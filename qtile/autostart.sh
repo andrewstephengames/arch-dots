@@ -1,6 +1,7 @@
 #!/bin/sh
 picom --experimental-backends &
 #appimagelauncherd &
+sh $HOME/scripts/dotsync
 lxsession &
 dunst &
 redshift &
