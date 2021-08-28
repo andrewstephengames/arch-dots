@@ -113,6 +113,8 @@ keys = [
         desc="Launch PCManFM"),
     Key([mod], "m", lazy.spawn("sh scripts/mcpe"),
         desc="Launch MCPE"),
+    Key([mod], "o", lazy.window.toggle_minimize(),
+        desc="Toggle minimize *window"),
 ]
 
 group_names = [("", {'layout': 'columns'}),
