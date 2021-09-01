@@ -1,7 +1,5 @@
 configuration {
 	modi: "drun,emoji,run,ssh,calc";
-width: 25;
-lines: 10;
 /*	columns: 1;*/
 	font: "Iosevka Term Semibold Extended 15";
 /*	bw: 1;*/
@@ -44,12 +42,10 @@ lines: 10;
 /*	line-padding: 1;*/
 /*	filter: ;*/
 /*	separator-style: "dash";*/
-	hide-scrollbar: true;
 /*	fullscreen: false;*/
 /*	fake-transparency: false;*/
 /*	dpi: -1;*/
 /*	threads: 0;*/
-	scrollbar-width: 0;
 /*	scroll-method: 0;*/
 /*	fake-background: "screenshot";*/
 /*	window-format: "{w}    {c}   {t}";*/
@@ -150,4 +146,4 @@ lines: 10;
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@import "/usr/share/rofi/themes/andrew-gruvbox-rofi.rasi"
+@import "andrew-gruvbox-rofi.rasi"

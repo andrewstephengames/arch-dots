@@ -35,6 +35,8 @@ alias mpvtty='mpv --force-seekable=yes --no-audio-display'
 set -o vi
 export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
+$HOME/scripts/shell/autocowsay
+
 #if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 #  exec startx
 #fi
