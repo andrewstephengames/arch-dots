@@ -1,5 +1,5 @@
 #!/bin/sh
-picom --experimental-backends &
+picom --experimental-backends --backend glx &
 #appimagelauncherd &
 sh $HOME/scripts/dotsync
 sh $HOME/scripts/pkgmaintain.sh
