@@ -6,14 +6,15 @@
 ! Last Modified: 6 Sep 2014
 ! -----------------------------------------------------------------------------
 Xcursor-theme: Vanilla-DMZ
-XTerm*faceName: xft:Iosevka Term Semibold Extended:size=16, \
-                xft:Noto Color Emoji:size=16, \
-                xft:Font Awesome 5 Free:size=16, \
-                xft:Monospace:style:size=16
-UXTerm*faceName:xft:Iosevka Term Semibold Extended:size=16, \
-                xft:Noto Color Emoji:size=16, \
-                xft:Font Awesome 5 Free:size=16, \
-                xft:Monospace:size=16
+XTerm*faceName: xft:Iosevka Term Semibold Extended:size=11, \
+                xft:Noto Color Emoji:size=11, \
+                xft:Font Awesome 5 Free:size=11, \
+                xft:Monospace:style:size=11
+UXTerm*faceName:xft:Iosevka Term Semibold Extended:size=11, \
+                xft:Noto Color Emoji:size=11, \
+                xft:Font Awesome 5 Free:size=11, \
+                xft:Monospace:size=11
+*.font: Roboto:size=20
 ! hard contrast: *background: #1d2021
 *background: #282828
 ! soft contrast: *background: #32302f

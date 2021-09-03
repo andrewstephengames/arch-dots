@@ -25,6 +25,7 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias yay='paru'
 alias scr='sxiv ~/Screenshots'
+alias mus='~/scripts/shell/mus'
 alias dotsync='~/scripts/shell/dotsync'
 # alias mem='[free -h | head -n 2 | awk 'print $6}' | tail -n 1]'
 alias mpv='mpv --force-seekable=yes'
@@ -36,8 +37,10 @@ alias mp480='mpv --force-seekable=yes --ytdl-format="bestvideo[ext=mp4][height<=
 alias mpvtty='mpv --force-seekable=yes --no-audio-display'
 set -o vi
 export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+#export PS1="\W $(tput setaf 7)\\\$ "
 
 $HOME/scripts/shell/autocowsay
+source /usr/share/doc/pkgfile/command-not-found.bash
 
 #if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 #  exec startx

@@ -6,7 +6,7 @@ sh $HOME/scripts/pkgmaintain.sh
 lxsession &
 dunst &
 redshift &
-unclutter --timeout 5 &
+unclutter --timeout 3 &
 nitrogen --restore &
 flameshot &
 pcmanfm -d &
