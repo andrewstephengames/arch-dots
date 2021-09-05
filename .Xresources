@@ -14,7 +14,7 @@ UXTerm*faceName:xft:Iosevka Term Semibold Extended:size=11, \
                 xft:Noto Color Emoji:size=11, \
                 xft:Font Awesome 5 Free:size=11, \
                 xft:Monospace:size=11
-*.font: Roboto:size=20
+*.font: Inter:size=20
 ! hard contrast: *background: #1d2021
 *background: #282828
 ! soft contrast: *background: #32302f

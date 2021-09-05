@@ -202,16 +202,51 @@ screens = [
                 widget.CurrentLayoutIcon(
                     custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
                 ),
-                widget.TaskList(
-#                    fontsize=14,
-#                    icon_size=18,
-                    mouse_callbacks={'Button2': lambda: qtile.cmd_spawn('wmctrl -c :ACTIVE:')},
-                    txt_floating='',
-                    txt_minimized='',
-                    borderwidth=0,
-                    spacing=10,
-                    margin=-3,
+# song name
+                widget.GenPollText(
+                    func=lambda: subprocess.check_output("/home/andrew/scripts/shell/mpvctitle").decode("utf-8"),
+                    update_interval=1,
+                    max_chars=32,
                 ),
+                widget.Image(
+                    filename='~/.config/qtile/icons/previous-button.png',
+                    mouse_callbacks={
+                                        'Button1': lambda: qtile.cmd_spawn('mpvc prev'),
+                                    },
+                ),
+                widget.Image(
+                    filename='~/.config/qtile/icons/pause-button.png',
+                    mouse_callbacks={
+                                        'Button1': lambda: qtile.cmd_spawn('mpvc -p'),
+                                    },
+                ),
+                widget.Image(
+                    filename='~/.config/qtile/icons/next-button.png',
+                    mouse_callbacks={
+                                        'Button1': lambda: qtile.cmd_spawn('mpvc next'),
+                                    },
+                ),
+                widget.Image(
+                    filename='~/.config/qtile/icons/stop-button.png',
+                    mouse_callbacks={
+                                        'Button1': lambda: qtile.cmd_spawn('mpvc -k'),
+                                    },
+                ),
+#song duration
+                widget.GenPollText(
+                    func=lambda: subprocess.check_output("/home/andrew/scripts/shell/mpvcduration").decode("utf-8"),
+                    update_interval=0.5,
+                ),
+                widget.Spacer(
+                ),
+#                widget.TaskList(
+#                    mouse_callbacks={'Button2': lambda: qtile.cmd_spawn('wmctrl -c :ACTIVE:')},
+#                    txt_floating='',
+#                    txt_minimized='',
+#                    borderwidth=0,
+#                    spacing=10,
+#                    margin=-3,
+#                ),
 #                widget.WindowName(
 #                    mouse_callbacks={'Button2': lambda: qtile.cmd_spawn('wmctrl -c :ACTIVE:')},
 #                    txt_floating=' ',
