@@ -66,7 +66,6 @@ keys = [
     Key([mod], "j", lazy.layout.grow_down(),
         desc="Grow window down"),
     Key([mod], "k", lazy.layout.grow_up(), desc="Grow window up"),
-    Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
 
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
@@ -123,6 +122,10 @@ keys = [
         desc="Prev mpv music"),
     Key(["control", "shift"], "x", lazy.spawn("mpvc next"),
         desc="Next mpv music"),
+    Key([mod], "n", lazy.spawn("dunstctl history-pop"), 
+        desc="Show most recent notification in history"),
+    Key([mod, "shift"], "n", lazy.spawn("dunstctl close-all"), 
+        desc="Close notifications on the screen"),
 #    Key([mod], "d", lazy.spawn("deadbeef"),
 #        desc="Launch Deadbeef"),
 ]
