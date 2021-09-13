@@ -14,6 +14,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export EDITOR=vim
 export VISUAL=vim
 alias ls='ls --color=auto'
+alias d='cd "$(ls -d */ | fzf)"; exa --all --long --header --sort=modified'
 alias grep='grep --color=auto'
 alias ll='exa --all --long --header --sort=modified'
 alias cll='clear && exa --all --long --header --sort=modified'

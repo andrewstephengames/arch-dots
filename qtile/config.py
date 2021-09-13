@@ -29,7 +29,7 @@ import re
 import socket
 import subprocess
 from libqtile import qtile
-from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen
+from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.command import lazy
 from libqtile import layout, bar, widget, hook
 from libqtile.lazy import lazy
@@ -86,8 +86,6 @@ keys = [
         desc="Spawn a Rofi Run Prompt"),
     Key([mod], "e", lazy.spawn("rofi -show emoji -modi emoji"),
         desc="Spawn Rofi Emoji"),
-    Key([mod], "c", lazy.spawn("rofi -show calc -modi calc -no-show-match -no-sort"),
-        desc="Spawn Rofi Calc"),
     Key([], "Page_Up", lazy.spawn("pamixer -i 5"),
         desc="Increase Volume"),
     Key([], "Page_Down", lazy.spawn("pamixer -d 5"),
@@ -130,7 +128,7 @@ keys = [
 #        desc="Launch Deadbeef"),
 ]
 
-group_names = [("", {'layout': 'columns'}),
+group_names = [("", {'layout': 'max'}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["spacefm"])]}),
                ("", {'layout': 'columns'}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["deadbeef"])]}),
