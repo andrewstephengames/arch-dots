@@ -175,7 +175,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Iosevka Term Semibold Extended',
+    font='Inter',
     icon_size=20,
     fontsize=18,
     padding=3,
