@@ -1,7 +1,7 @@
 configuration {
 	modi: "drun,emoji,run,ssh";
 /*	columns: 1;*/
-	font: "Iosevka Term Semibold Extended 15";
+	font: "Inter 15";
 /*	bw: 1;*/
 /*	location: 0;*/
 /*	padding: 5;*/
@@ -146,7 +146,7 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@import "andrew-gruvbox-rofi.rasi"
+//@import "andrew-gruvbox-rofi.rasi"
 @import "gruvbox-dmenu.rasi"
 //@theme "/usr/share/rofi/themes/andrew-gruvbox-rofi.rasi"
 @theme "gruvbox-dmenu.rasi"
