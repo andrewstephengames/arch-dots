@@ -131,7 +131,7 @@ keys = [
 group_names = [("", {'layout': 'max'}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["spacefm"])]}),
                ("", {'layout': 'columns'}),
-               ("", {'layout': 'columns', 'matches':[Match(wm_class=["deadbeef"])]}),
+               ("", {'layout': 'tile', 'matches':[Match(wm_class=["deadbeef"])]}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["fsearch"])]}),
                ("", {'layout': 'max', 'matches':[Match(wm_class=["multimc", "Minecraft Linux Launcher UI"])]}),
                ("", {'layout': 'columns'}),
