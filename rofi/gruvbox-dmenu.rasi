@@ -8,7 +8,7 @@
     background-color:      rgba (40, 40, 40, 100%);
     border-color:          White;
     text-color:            rgba (235, 219, 178, 100%);
-    font:            "Inter 16";
+    font:            "Inter 14";
 }
 window {
     anchor:     north;
