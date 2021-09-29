@@ -111,10 +111,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Iosevka Term
+    family: Roboto Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold Extended
+    style: Regular
 
   # Bold font face
   bold:
@@ -122,10 +122,10 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Iosevka Term
+    family: Roboto Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Bold Extended
+    style: Bold
 
   # Italic font face
   italic:
@@ -133,10 +133,10 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Iosevka Term
+    family: Roboto Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold Extended Oblique
+    style: Italic
 
   # Bold italic font face
   bold_italic:
@@ -144,7 +144,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Iosevka Term
+    family: Roboto Mono
 
     # The `style` can be specified to pick a specific face.
     style: Bold Extended Oblique
