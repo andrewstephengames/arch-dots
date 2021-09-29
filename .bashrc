@@ -15,7 +15,7 @@ export EDITOR=vim
 export VISUAL=vim
 alias clock='tty-clock -xcC2'
 alias ls='ls --color=auto'
-alias d='cd "$(ls -d */ | fzf)"; exa --all --long --header --sort=modified'
+alias d='cd "$(ls -d */ | fzf)"; clear; exa --all --long --header --sort=modified'
 alias grep='grep --color=auto'
 alias ll='exa --all --long --header --sort=modified'
 alias cll='clear && exa --all --long --header --sort=modified'
@@ -44,6 +44,7 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput se
 #export PS1="\W $(tput setaf 7)\\\$ "
 
 $HOME/scripts/shell/autocowsay
+#$HOME/scripts/shell/ri
 source /usr/share/doc/pkgfile/command-not-found.bash
 
 #if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
