@@ -2,12 +2,12 @@
 # Use preference dialog in lxpanel to adjust config when you can.
 
 Global {
-  edge=top
+  edge=left
   allign=left
   margin=0
   widthtype=percent
   width=100
-  height=25
+  height=150
   transparent=1
   tintcolor=#000000
   alpha=255
@@ -70,11 +70,6 @@ Plugin {
     Button {
       id=mpv.desktop
     }
-  }
-}
-Plugin {
-  type=tray
-  Config {
   }
 }
 Plugin {
