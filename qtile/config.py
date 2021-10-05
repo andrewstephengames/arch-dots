@@ -124,13 +124,13 @@ keys = [
         desc="Show most recent notification in history"),
     Key([mod, "shift"], "n", lazy.spawn("dunstctl close-all"), 
         desc="Close notifications on the screen"),
-#    Key([mod], "d", lazy.spawn("deadbeef"),
-#        desc="Launch Deadbeef"),
+    Key([mod], "c", lazy.spawn("alacritty -e calc"),
+        desc="Launch calc"),
 ]
 
 group_names = [("", {'layout': 'max'}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["spacefm"])]}),
-               ("", {'layout': 'columns'}),
+               ("", {'layout': 'max'}),
                ("", {'layout': 'tile', 'matches':[Match(wm_class=["deadbeef"])]}),
                ("", {'layout': 'columns', 'matches':[Match(wm_class=["fsearch"])]}),
                ("", {'layout': 'max', 'matches':[Match(wm_class=["multimc", "Minecraft Linux Launcher UI"])]}),
