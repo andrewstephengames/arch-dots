@@ -16,6 +16,7 @@ export VISUAL=vim
 alias clock='tty-clock -xcC2'
 alias ls='ls --color=auto'
 alias d='cd "$(ls -d */ | fzf)"; clear; exa --all --long --header --sort=modified'
+alias datedir='mkdir "$(date +%Y%m%d)"'
 alias grep='grep --color=auto'
 alias ll='exa --all --long --header --sort=modified'
 alias cll='clear && exa --all --long --header --sort=modified'
